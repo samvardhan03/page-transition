@@ -1,0 +1,158 @@
+.swiper-container {
+	width: 100%;
+	height: 500px; /* Set the height of the carousel */
+  }
+  
+  .swiper-slide {
+	background-color: #fff; /* Set the background color of the slides */
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: #000; /* Set the color of the navigation buttons */
+	color: #fff; /* Set the color of the icon inside the buttons */
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  .swiper-button-prev {
+	left: 20px;
+  }
+  
+  .swiper-button-next {
+	right: 20px;
+  }
+  
+  .swiper-pagination {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .flip-button {
+	position: relative;
+	background-color: #4CAF50; /* Change this to the desired background color */
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	overflow: hidden;
+  }
+  
+  .flip-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: left;
+	transform: rotateY(-150deg);
+	background-color: #008CBA; /* Change this to the desired flip side color */
+	transition: transform 0.6s ease-out;
+  }
+  
+  .flip-button:hover::before {
+	transform: rotateY(0deg);
+  }
+  
+  
+
+  .mindwrap-section {
+	background-image: linear-gradient(to bottom right, #2675bf, #5a5b9f);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .mindwrap-container {
+	text-align: center;
+	color: #fff;
+  }
+  
+  .mindwrap-container h2 {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+  }
+  
+  .mindwrap-container p {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+  }
+  
+  .mindwrap-btn {
+	display: inline-block;
+	padding: 1.5rem 4rem;
+	border-radius: 2rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #2675bf;
+	transition: background-color 0.3s ease;
+  }
+  
+  .mindwrap-btn:hover {
+	background-color: #2675bf;
+	color: #fff;
+  }
+  
+
+
+  #mindwrap {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #mindwrap h2 {
+    margin-bottom: 30px;
+  }
+  
+  #mindwrap p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  #mindwrap .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  #mindwrap .col-md-6 {
+    width: 50%;
+    padding: 0 20px;
+  }
+  
+  #mindwrap h3 {
+    margin-bottom: 20px;
+  }
+  
+  #mindwrap ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  #mindwrap li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #mindwrap .col-md-6 {
+      width: 100%;
+    }
+  }
+  
